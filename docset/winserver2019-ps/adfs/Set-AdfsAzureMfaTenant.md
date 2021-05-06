@@ -44,7 +44,7 @@ This command creates a certificate for Azure MFA, registers it in the tenant, an
 
 ### Example 2: Determine the Azure MFA certificate
 ```
-PS C:\> New-AdfsAzureMfaTenantCertificate -TenantID <your tenant ID> -out-file amfacert.cer
+PS C:\> New-AdfsAzureMfaTenantCertificate -TenantID <your tenant ID> | out-file amfacert.cer
 ```
 
 This command determines which certificate Azure MFA is using, after AD FS has been configured for Azure MFA using the previous example.
